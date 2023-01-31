@@ -1,0 +1,17 @@
+Package: modtransfer
+Title: Estimate the Orthogonal Mapping Matrix that Determines Heterogeneity between Datasets
+Version: 0.0.0.9000
+Authors@R: 
+    person("Guanghao", "Zhang", , "ghzhang@umich.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7615-4415"))
+Description: Medical codes across electronic health record (EHR) systems and across coding systems are usually heterogeneous. When heterogeneity across different EHR systems is determined by an orthogonal mapping matrix, we proposed estimation methods of the orthogonal mapping matrix such that features from these two heterogeneous EHR systems can be automatically mapped. The estimation methods use sample covariance matrices to obtain the mapping matrix and are therefore scalable in terms of the number of health records. With estimated mapping matrix, one can easily transfer a prediction model trained at source system to the heterogeneous target system.
+License: use_mit_license()
+Imports:
+    MASS,
+    tidyr,
+    caret,
+    lsa,
+    dplyr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
